@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "MyWebFont";
+	src: url("comicsans.ttf")
+}
+
+body {
+	background-size: cover;
+	background-image: url("/img/256x256bb.jpg");
+}
+
+html {
+	font-family: 'MyWebFont';
+	text-align: center;
+}
+
+.ya {
+	display: flex;
+	justify-content: center;
+
+	line-height: 200px;
+	height: 160px;
+}
+
+.ya2 {
+	font-size: 3em;
+	display: block;
+}
+
+.ya2 img {
+	height: 200px
+}
+
+.grid {
+	width: 80%;
+	background: lime;
+	height: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid .item {
+	width: 50%;
+}
