@@ -1,3 +1,7 @@
+* {
+	color: white;
+}
+
 @font-face {
 	font-family: "MyWebFont";
 	src: url("comicsans.ttf")
@@ -6,12 +10,23 @@
 body {
 	background-size: cover;
 	background-image: url("/svalbard.jpg");
-	background-position: center center;
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
 html {
 	font-family: 'MyWebFont';
 	text-align: center;
+}
+
+h1 p {
+	background-color: orange;
+	display: inline;
+	margin-left: 4px;
+	padding: 8px;
+	border-radius: 4pt;
+	color: black;
+	font-family: 'Gotham';
 }
 
 .ya {
@@ -25,18 +40,36 @@ html {
 .ya2 {
 	font-size: 2em;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin-top: 3em;
 	line-height: calc(2.2em);
 }
 
+.ya2 p {
+	height: 30px;
+	line-height: 30px;
+}
+
 .grid {
 	width: 80%;
-	background: #b09d9d;
+	background: #361607;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 10em;
+
+	min-height: 500px;
+}
+
+.grid .item img {
+	max-width: 80%;
+}
+
+@media (max-width: 1000px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
 }
