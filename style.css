@@ -1,5 +1,7 @@
 * {
 	color: white;
+	margin: 0px;
+	padding: 0px;
 }
 
 @font-face {
@@ -9,7 +11,7 @@
 
 body {
 	background-size: cover;
-	background-image: url("/svalbard.jpg");
+	background-image: url("960x0.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -17,6 +19,22 @@ body {
 html {
 	font-family: 'MyWebFont';
 	text-align: center;
+}
+
+.scroller {
+	position: fixed;
+	height: 30px;
+	background: black;
+	width: 100%;
+}
+
+.scroller * {
+	display: inline-block;
+}
+
+h1.ya3 {
+	padding-top: 60px;
+	color: black;
 }
 
 h1 p {
